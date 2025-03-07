@@ -9,13 +9,13 @@ import {
 } from '@nestjs/common';
 import { CoursesService } from './courses.service';
 import { LessonsService } from '../lessons/lessons.service';
-import { CommentsService } from 'src/comments/comments.service';
+import { CommentsService } from '../comments/comments.service';
 import { ApiOperation } from '@nestjs/swagger';
 import { CreateCourseDto } from './dto/create-course.dto';
 import { UpdateCourseDto } from './dto/update-course.dto';
-import { CreateLessonDto } from 'src/lessons/dto/create-lesson.dto';
-import { UpdateLessonDto } from 'src/lessons/dto/update-lesson.dto';
-import { CreateCommentDto } from 'src/comments/dto/create-comment.dto';
+import { CreateLessonDto } from '../lessons/dto/create-lesson.dto';
+import { UpdateLessonDto } from '../lessons/dto/update-lesson.dto';
+import { CreateCommentDto } from '../comments/dto/create-comment.dto';
 
 @Controller('courses')
 export class CoursesController {
